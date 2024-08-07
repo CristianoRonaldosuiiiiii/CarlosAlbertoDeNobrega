@@ -8,7 +8,7 @@
 <body>
     <form action="" method="post">
         <p>Digite seu nome:</p>
-        <input type="text" name="Nome" placeholder="Insira o nome completo">
+        <input type="text" name="Nome" placeholder="Insira o nome completo" required>
         <p>Qual é a sua altura(cm)</p>
         <input type="number" name="Altura em centímetros" placeholder="Altura">
         <p>Coloque seu E-Mail</p>
@@ -18,9 +18,6 @@
         <p>Joga baquete?</p>
         <input type="radio" name="joga basquete" value="Sim" checked> Sim
         <input type="radio" name="joga basquete" value="Não"> Não/ainda não 
-        
-        <br>
-        <input type="checkbox" name="Abcde" id="" checked> aceito receber convocações repentinas
         <p>De onde você é</p>
         <select name="estado" id="">
             <option value="1">Acre</option>
@@ -30,5 +27,10 @@
         </select>
         <br>
         <textarea name="Comentários" id=""></textarea>    
+
+        <br>
+        <input type="checkbox" name="Abcde" id="" checked> aceito receber convocações repentinas
+        <button type="submit">Enviar</button>
+        ,<button type="reset">Apagar o Formulário</button>
 </body>
 </html>
